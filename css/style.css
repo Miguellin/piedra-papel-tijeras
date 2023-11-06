@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playpen Sans";
+}
+
+:root {
+    --primaryColor: #F8FACE;
+    --secondaryColor: #010742;
+    --tercearyColor: #F9AB6F;
+}
+
+body {
+    background-color: var(--secondaryColor);
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 30px;
+}
+
+.marcador {
+    background-color: var(--tercearyColor);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: aliceblue;
+    background-color: var(--secondaryColor);
+    line-height: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--tercearyColor);
+    font-size: 20px;
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 35px;
+}
+
+.elegir-arma {
+    margin-bottom: 30px;
+}
+
+.elegir-arma h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.arma {
+    font-size: 35px;
+    background-color: var(--primaryColor);
+    border: 0;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.mensaje {
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion {
+    color: var(--secondaryColor);
+    background-color: var(--tercearyColor);
+    border-radius: 5px;
+    padding-inline: 8px;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--tercearyColor);
+    color: var(--secondaryColor);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none;
+}
